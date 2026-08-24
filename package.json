@@ -1,0 +1,54 @@
+{
+  "name": "kuroneko",
+  "version": "1.0.0",
+  "description": "Zero-dependency scraping modules for media cataloging — manga, video-posts, 2D streaming, tube, and blog/RSS feed sources. Framework-agnostic; works in Node.js >= 18.17, Bun, or any JS runtime with global fetch.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./doujindesu": "./src/doujindesu.js",
+    "./nekopoi": "./src/nekopoi.js",
+    "./hentaitv": "./src/hentaitv.js",
+    "./eporner": "./src/eporner.js",
+    "./external": "./src/external.js",
+    "./cache": "./src/cache.js",
+    "./security": "./src/security.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.17"
+  },
+  "scripts": {
+    "test": "node test/import.test.mjs && node test/crypto.test.mjs",
+    "test:live": "node test/smoke.mjs",
+    "example": "node examples/basic.js"
+  },
+  "keywords": [
+    "scraper",
+    "crawler",
+    "manga",
+    "doujinshi",
+    "web-scraping",
+    "api-wrapper",
+    "adult",
+    "catalog",
+    "nodejs",
+    "zero-dependency",
+    "serverless"
+  ],
+  "license": "MIT",
+  "author": "Bagas <232066146+bagasss859-sketch@users.noreply.github.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bagasss859-sketch/kuroneko"
+  },
+  "bugs": {
+    "url": "https://github.com/bagasss859-sketch/kuroneko/issues"
+  },
+  "homepage": "https://github.com/bagasss859-sketch/kuroneko#readme"
+}
